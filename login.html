@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Login - Flute Admin</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/css/index.css" />
+    <script src="assets/js/app.js"></script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
+  >
+    <div
+      class="flex min-h-screen flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 px-4"
+    >
+      <div class="w-full max-w-md space-y-8">
+        <div>
+          <div class="flex justify-center">
+            <div
+              class="w-16 h-16 bg-primary rounded-full flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-3xl">F</span>
+            </div>
+          </div>
+          <h2
+            class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Acesse sua conta
+          </h2>
+        </div>
+        <form
+          action="#"
+          class="mt-8 space-y-6"
+          method="POST"
+          x-data="{ showPassword: false }"
+        >
+          <div class="space-y-4">
+            <div>
+              <label
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                for="username"
+                >Usuário</label
+              >
+              <div class="mt-1">
+                <input
+                  autocomplete="username"
+                  class="block w-full appearance-none rounded-md border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark px-3 py-3 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm"
+                  id="username"
+                  name="username"
+                  placeholder="Seu nome de usuário"
+                  required=""
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="relative">
+              <label
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                for="password"
+                >Senha</label
+              >
+              <div class="mt-1">
+                <input
+                  :type="showPassword ? 'text' : 'password'"
+                  autocomplete="current-password"
+                  class="block w-full appearance-none rounded-md border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark px-3 py-3 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm"
+                  id="password"
+                  name="password"
+                  placeholder="Sua senha"
+                  required=""
+                />
+                <button
+                  @click="showPassword = !showPassword"
+                  class="absolute inset-y-0 right-0 top-7 flex items-center pr-3"
+                  type="button"
+                >
+                  <span
+                    class="material-icons text-text-secondary-light dark:text-text-secondary-dark"
+                    x-text="showPassword ? 'visibility_off' : 'visibility'"
+                  >
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="h-5"></div>
+          <div class="text-sm text-right">
+            <a class="font-medium text-primary hover:text-primary/90" href="#">
+              Esqueceu sua senha?
+            </a>
+          </div>
+          <div>
+            <button
+              class="group relative flex w-full justify-center rounded-lg border border-transparent bg-primary py-3 px-4 text-sm font-semibold text-white hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark"
+              type="submit"
+            >
+              Entrar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    ></script>
+  </body>
+</html>

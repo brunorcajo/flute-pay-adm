@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Flute Dashboard - Notificações</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/css/index.css" />
+    <script src="assets/js/app.js"></script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
+  >
+    <div class="flex h-screen">
+      <aside
+        class="w-64 bg-card-light dark:bg-card-dark border-r border-border-light dark:border-border-dark flex flex-col"
+      >
+        <div class="p-6 flex items-center space-x-3">
+          <div
+            class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-xl">F</span>
+          </div>
+          <h1 class="text-2xl font-bold text-text-light dark:text-text-dark">
+            Flute
+          </h1>
+        </div>
+        <nav class="flex-1 px-4 py-2 space-y-1">
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">dashboard</span> Dashboard
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">shopping_cart</span> Pedidos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">subscriptions</span> Assinaturas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">inventory_2</span> Produtos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">category</span> Categorias
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">local_offer</span> Ofertas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">sell</span> Cupons de desconto
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">people</span> Coprodutores
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">webhook</span> Webhooks
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">receipt_long</span> Nota fiscal
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Configurações
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">admin_panel_settings</span>
+            Administração
+          </a>
+        </nav>
+        <div
+          class="mt-auto p-4 border-t border-border-light dark:border-border-dark space-y-1"
+        >
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Ajustes
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">logout</span> Logout
+          </a>
+        </div>
+      </aside>
+      <main class="flex-1 overflow-y-auto">
+        <header
+          class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10 p-6 flex items-center justify-between border-b border-border-light dark:border-border-dark"
+        >
+          <h2 class="text-2xl font-bold text-text-light dark:text-text-dark">
+            Notificações
+          </h2>
+          <div class="flex items-center space-x-4">
+            <button
+              class="relative p-2 rounded-full bg-primary/10 dark:bg-primary/20"
+            >
+              <span class="material-icons text-primary">notifications</span>
+            </button>
+            <div class="flex items-center space-x-2">
+              <img
+                alt="User avatar"
+                class="w-10 h-10 rounded-full"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCGZuVMMmdnkBe7THZokMamQ2BnhNkApV8vqIiNcPhFBHVAJpAhcQwLTkSwmnktRbg9XPuDplxcDixkZXKnC1jZA5cERsOtzqmm_iFPNjAZNZeG4iM13MdszNuOeKG4b7yp5kk5qiH7-LQ_6s8bVXUX__Maol_jsTIWRu56xKVyoW665TIaHlq0L9wAE0-88ZYt5ac-6Jo4B782Qj4xi3AdqeVKUzG70fBwmbb58tm-RPxx8j9OWm5PTp8gcQTmtHjFh5QxxjzuKE"
+              />
+              <div>
+                <p
+                  class="font-semibold text-sm text-text-light dark:text-text-dark"
+                >
+                  Anônimo
+                </p>
+                <p
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Admin
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="p-6 space-y-6">
+          <div
+            class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm border border-border-light dark:border-border-dark"
+          >
+            <div
+              class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6"
+            >
+              <div
+                class="flex space-x-2 mb-4 sm:mb-0"
+                x-data="{ filter: 'all' }"
+              >
+                <button
+                  :class="{ 'bg-primary text-white': filter === 'all', 'bg-gray-200 dark:bg-gray-700 text-text-secondary-light dark:text-text-secondary-dark': filter !== 'all' }"
+                  @click="filter = 'all'"
+                  class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                  Todas
+                </button>
+                <button
+                  :class="{ 'bg-primary text-white': filter === 'unread', 'bg-gray-200 dark:bg-gray-700 text-text-secondary-light dark:text-text-secondary-dark': filter !== 'unread' }"
+                  @click="filter = 'unread'"
+                  class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                  Não Lidas
+                </button>
+              </div>
+              <button
+                class="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium bg-gray-200 dark:bg-gray-700 text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+              >
+                <span class="material-icons">done_all</span>
+                <span>Marcar todas como lidas</span>
+              </button>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="flex items-center p-4 rounded-lg border-l-4 border-primary bg-primary/5 dark:bg-primary/10"
+              >
+                <div class="flex-shrink-0 mr-4">
+                  <div class="w-3 h-3 bg-primary rounded-full"></div>
+                </div>
+                <div class="flex-grow">
+                  <p class="font-semibold text-text-light dark:text-text-dark">
+                    Novo pedido recebido!
+                  </p>
+                  <p
+                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                  >
+                    O pedido #12345 foi confirmado e está aguardando
+                    processamento.
+                  </p>
+                </div>
+                <div
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark whitespace-nowrap ml-4"
+                >
+                  Hoje, 09:41
+                </div>
+              </div>
+              <div
+                class="flex items-center p-4 rounded-lg border-l-4 border-primary bg-primary/5 dark:bg-primary/10"
+              >
+                <div class="flex-shrink-0 mr-4">
+                  <div class="w-3 h-3 bg-primary rounded-full"></div>
+                </div>
+                <div class="flex-grow">
+                  <p class="font-semibold text-text-light dark:text-text-dark">
+                    Falha no pagamento
+                  </p>
+                  <p
+                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                  >
+                    O pagamento para a assinatura de "Curso de Design" falhou.
+                  </p>
+                </div>
+                <div
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark whitespace-nowrap ml-4"
+                >
+                  Ontem, 15:30
+                </div>
+              </div>
+              <div
+                class="flex items-center p-4 rounded-lg border-l-4 border-transparent hover:bg-gray-50 dark:hover:bg-gray-800/50"
+              >
+                <div class="flex-shrink-0 mr-4">
+                  <div class="w-3 h-3 bg-transparent rounded-full"></div>
+                </div>
+                <div class="flex-grow">
+                  <p
+                    class="font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                  >
+                    Manutenção Programada
+                  </p>
+                  <p
+                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                  >
+                    O sistema passará por uma manutenção no dia 25/12/2023 às
+                    23:00.
+                  </p>
+                </div>
+                <div
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark whitespace-nowrap ml-4"
+                >
+                  20/12/2023, 10:00
+                </div>
+              </div>
+              <div
+                class="flex items-center p-4 rounded-lg border-l-4 border-transparent hover:bg-gray-50 dark:hover:bg-gray-800/50"
+              >
+                <div class="flex-shrink-0 mr-4">
+                  <div class="w-3 h-3 bg-transparent rounded-full"></div>
+                </div>
+                <div class="flex-grow">
+                  <p
+                    class="font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                  >
+                    Novo coprodutor adicionado
+                  </p>
+                  <p
+                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                  >
+                    João Silva foi adicionado como coprodutor do produto "Ebook
+                    de Receitas".
+                  </p>
+                </div>
+                <div
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark whitespace-nowrap ml-4"
+                >
+                  19/12/2023, 11:20
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      defer=""
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    ></script>
+  </body>
+</html>
