@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Flute Dashboard - Detalhes do Pedido</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/css/index.css" />
+    <script src="assets/js/app.js"></script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark"
+  >
+    <div class="flex h-screen">
+      <aside
+        class="w-64 bg-card-light dark:bg-card-dark border-r border-border-light dark:border-border-dark flex flex-col"
+      >
+        <div class="p-6 flex items-center space-x-3">
+          <div
+            class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-xl">F</span>
+          </div>
+          <h1 class="text-2xl font-bold text-text-light dark:text-text-dark">
+            Flute
+          </h1>
+        </div>
+        <nav class="flex-1 px-4 py-2 space-y-1">
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">dashboard</span> Dashboard
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+            href="#"
+          >
+            <span class="material-icons mr-3">shopping_cart</span> Pedidos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">subscriptions</span> Assinaturas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">inventory_2</span> Produtos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">category</span> Categorias
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">local_offer</span> Ofertas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">sell</span> Cupons de desconto
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">people</span> Coprodutores
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">webhook</span> Webhooks
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">receipt_long</span> Nota fiscal
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Configurações
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">admin_panel_settings</span>
+            Administração
+          </a>
+        </nav>
+        <div
+          class="mt-auto p-4 border-t border-border-light dark:border-border-dark space-y-1"
+        >
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Ajustes
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">logout</span> Logout
+          </a>
+        </div>
+      </aside>
+      <main class="flex-1 overflow-y-auto">
+        <header
+          class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10 p-6 flex items-center justify-between border-b border-border-light dark:border-border-dark"
+        >
+          <h2 class="text-2xl font-bold text-text-light dark:text-text-dark">
+            Detalhes do Pedido
+          </h2>
+          <div class="flex items-center space-x-4">
+            <button
+              class="relative p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
+              <span
+                class="material-icons text-text-secondary-light dark:text-text-secondary-dark"
+                >notifications</span
+              >
+              <span
+                class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white"
+                >3</span
+              >
+            </button>
+            <div class="flex items-center space-x-2">
+              <img
+                alt="User avatar"
+                class="w-10 h-10 rounded-full"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCGZuVMMmdnkBe7THZokMamQ2BnhNkApV8vqIiNcPhFBHVAJpAhcQwLTkSwmnktRbg9XPuDplxcDixkZXKnC1jZA5cERsOtzqmm_iFPNjAZNZeG4iM13MdszNuOeKG4b7yp5kk5qiH7-LQ_6s8bVXUX__Maol_jsTIWRu56xKVyoW665TIaHlq0L9wAE0-88ZYt5ac-6Jo4B782Qj4xi3AdqeVKUzG70fBwmbb58tm-RPxx8j9OWm5PTp8gcQTmtHjFh5QxxjzuKE"
+              />
+              <div>
+                <p
+                  class="font-semibold text-sm text-text-light dark:text-text-dark"
+                >
+                  Anônimo
+                </p>
+                <p
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Admin
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="p-6 space-y-6">
+          <div
+            class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm border border-border-light dark:border-border-dark"
+          >
+            <h3
+              class="text-lg font-semibold text-text-light dark:text-text-dark mb-4"
+            >
+              Informações Gerais do Pedido
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Número
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  #12345
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Criado em
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  17/09/2025 10:30
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Cliente
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  João da Silva
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Status
+                </p>
+                <span
+                  class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"
+                  >Confirmado</span
+                >
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Subtotal
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  R$ 299,90
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Juros
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  R$ 15,00
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Total
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  R$ 314,90
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Parcelas
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  3x
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Valor da Parcela
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  R$ 104,97
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Método de Pagamento
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  Cartão de Crédito (Visa **** 1234)
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Data de Confirmação do Pagamento
+                </p>
+                <p class="font-medium text-text-light dark:text-text-dark">
+                  17/09/2025 10:32
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark overflow-hidden"
+          >
+            <h3
+              class="text-lg font-semibold text-text-light dark:text-text-dark p-6"
+            >
+              Itens do Pedido
+            </h3>
+            <div class="overflow-x-auto">
+              <table
+                class="w-full text-sm text-left text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                <thead
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark uppercase bg-gray-50 dark:bg-gray-700"
+                >
+                  <tr>
+                    <th class="px-6 py-3" scope="col">Nome</th>
+                    <th class="px-6 py-3" scope="col">Preço</th>
+                    <th class="px-6 py-3" scope="col">Valor Desconto</th>
+                    <th class="px-6 py-3" scope="col">% Desconto</th>
+                    <th class="px-6 py-3" scope="col">Preço Final</th>
+                    <th class="px-6 py-3" scope="col">Assinatura</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="bg-card-light dark:bg-card-dark border-b dark:border-border-dark"
+                  >
+                    <td
+                      class="px-6 py-4 font-medium text-text-light dark:text-text-dark whitespace-nowrap"
+                    >
+                      <div class="flex items-center space-x-3">
+                        <img
+                          alt="Produto"
+                          class="w-10 h-10 rounded-md object-cover"
+                          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeWRhDm5xWXePicF-EH5fflB91uFwOeDr7NGHDcq3Hl4PQdng1ekqHQnlNdIV3vTku0gBGoUpF2h1bwdtFevX4OgkuT6O-jgRzYgPEnqnPD9a2U33lRAZNUon2PQW13UIg5JZg0sgOVd2HOvDVLLsYtCPsIzI7MFRUMt88y5YmufplEOP3c2I7VSWSK4AfrH1GDdU876tHt8OG-Rkb3rvQR1DQ6es0rGSzYH1CpifATwQhBwXcVoZKB4qdbc9Ms_WccKANX1TDV5o"
+                        />
+                        <span>Tênis de Corrida UltraBoost</span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">R$ 159,90</td>
+                    <td class="px-6 py-4">- R$ 10,00</td>
+                    <td class="px-6 py-4">6.25%</td>
+                    <td class="px-6 py-4">R$ 149,90</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800"
+                        >Mensal</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="bg-card-light dark:bg-card-dark">
+                    <td
+                      class="px-6 py-4 font-medium text-text-light dark:text-text-dark whitespace-nowrap"
+                    >
+                      <div class="flex items-center space-x-3">
+                        <img
+                          alt="Produto"
+                          class="w-10 h-10 rounded-md object-cover"
+                          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAimz3EXdSi9RE30xNedL6kfpiTURB5bMYMVunsjBp7Ew3UcYlF6NPqrV5Imdz4mx8k72NTE6Wd1B2uQzwRfw4miS_8bJePyqfaecbFLKdds4BpIzFO9Qev46n783g17wkaT5NBTK6pWyha3VBlVyAol4ukyVOVul77LNyecb9CaKUoqhmI1_SIb6aNTI6kIW5_VH-__D0TrcqwR3vhZ38S0T7KKG3YqGmDAEQmfMgziloIFrGeCleL-eny9rnSAYaq39YP8eD6XiA"
+                        />
+                        <span>Câmera Instantânea Retrô</span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">R$ 140,00</td>
+                    <td class="px-6 py-4">-</td>
+                    <td class="px-6 py-4">-</td>
+                    <td class="px-6 py-4">R$ 140,00</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800"
+                        >Não</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-center">
+            <button
+              class="bg-transparent hover:bg-gray-100 dark:hover:bg-gray-700 text-text-secondary-light dark:text-text-secondary-dark font-semibold py-2 px-6 border border-border-light dark:border-border-dark rounded-lg"
+            >
+              VOLTAR
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

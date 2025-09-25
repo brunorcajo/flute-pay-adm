@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Flute Dashboard - Assinaturas</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/css/index.css" />
+    <script src="assets/js/app.js"></script>
+
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark"
+  >
+    <div class="flex h-screen">
+      <aside
+        class="w-64 bg-card-light dark:bg-card-dark border-r border-border-light dark:border-border-dark flex flex-col"
+      >
+        <div class="p-6 flex items-center space-x-3">
+          <div
+            class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-xl">F</span>
+          </div>
+          <h1 class="text-2xl font-bold text-text-light dark:text-text-dark">
+            Flute
+          </h1>
+        </div>
+        <nav class="flex-1 px-4 py-2 space-y-1">
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">dashboard</span> Dashboard
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">shopping_cart</span> Pedidos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+            href="#"
+          >
+            <span class="material-icons mr-3">subscriptions</span> Assinaturas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">inventory_2</span> Produtos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">category</span> Categorias
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">local_offer</span> Ofertas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">sell</span> Cupons de desconto
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">people</span> Coprodutores
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">webhook</span> Webhooks
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">receipt_long</span> Nota fiscal
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Configurações
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">admin_panel_settings</span>
+            Administração
+          </a>
+        </nav>
+        <div
+          class="mt-auto p-4 border-t border-border-light dark:border-border-dark space-y-1"
+        >
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Ajustes
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">logout</span> Logout
+          </a>
+        </div>
+      </aside>
+      <main class="flex-1 overflow-y-auto">
+        <header
+          class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10 p-6 flex items-center justify-between border-b border-border-light dark:border-border-dark"
+        >
+          <h2 class="text-2xl font-bold text-text-light dark:text-text-dark">
+            Assinaturas
+          </h2>
+          <div class="flex items-center space-x-4">
+            <button
+              class="relative p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
+              <span
+                class="material-icons text-text-secondary-light dark:text-text-secondary-dark"
+                >notifications</span
+              >
+              <span
+                class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white"
+                >3</span
+              >
+            </button>
+            <div class="flex items-center space-x-2">
+              <img
+                alt="User avatar"
+                class="w-10 h-10 rounded-full"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCGZuVMMmdnkBe7THZokMamQ2BnhNkApV8vqIiNcPhFBHVAJpAhcQwLTkSwmnktRbg9XPuDplxcDixkZXKnC1jZA5cERsOtzqmm_iFPNjAZNZeG4iM13MdszNuOeKG4b7yp5kk5qiH7-LQ_6s8bVXUX__Maol_jsTIWRu56xKVyoW665TIaHlq0L9wAE0-88ZYt5ac-6Jo4B782Qj4xi3AdqeVKUzG70fBwmbb58tm-RPxx8j9OWm5PTp8gcQTmtHjFh5QxxjzuKE"
+              />
+              <div>
+                <p
+                  class="font-semibold text-sm text-text-light dark:text-text-dark"
+                >
+                  Anônimo
+                </p>
+                <p
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Admin
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="p-6 space-y-6">
+          <div
+            class="bg-card-light dark:bg-card-dark p-4 rounded-xl shadow-sm border border-border-light dark:border-border-dark"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+              <input
+                class="w-full px-4 py-2 bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary"
+                placeholder="Nº do Pedido"
+                type="text"
+              />
+              <select
+                class="w-full px-4 py-2 bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                <option value="">Status</option>
+                <option value="active">Ativa</option>
+                <option value="cancelled">Cancelada</option>
+                <option value="pending">Pendente</option>
+              </select>
+              <input
+                class="w-full px-4 py-2 bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary"
+                placeholder="Nome do Produto"
+                type="text"
+              />
+              <input
+                class="w-full px-4 py-2 bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary"
+                placeholder="Nome ou documento do Cliente"
+                type="text"
+              />
+              <button
+                class="bg-primary text-white px-6 py-2 rounded-lg flex items-center justify-center space-x-2 hover:bg-blue-600 transition-colors"
+              >
+                <span class="material-icons">search</span>
+                <span>Buscar</span>
+              </button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm border border-border-light dark:border-border-dark"
+            >
+              <h3
+                class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                Assinaturas nos Últimos 30 Dias
+              </h3>
+              <p
+                class="text-2xl font-bold text-text-light dark:text-text-dark mt-2"
+              >
+                0
+              </p>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm border border-border-light dark:border-border-dark"
+            >
+              <h3
+                class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                Cancelamentos nos Últimos 30 Dias
+              </h3>
+              <p
+                class="text-2xl font-bold text-text-light dark:text-text-dark mt-2"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm border border-border-light dark:border-border-dark"
+            >
+              <h3
+                class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                Total de Assinaturas Ativas
+              </h3>
+              <p
+                class="text-2xl font-bold text-text-light dark:text-text-dark mt-2"
+              >
+                1
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark overflow-hidden"
+          >
+            <div class="overflow-x-auto">
+              <table
+                class="w-full text-sm text-left text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                <thead
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark uppercase bg-gray-50 dark:bg-gray-700"
+                >
+                  <tr>
+                    <th class="px-6 py-3" scope="col">Número</th>
+                    <th class="px-6 py-3" scope="col">Produto</th>
+                    <th class="px-6 py-3" scope="col">Valor (R$)</th>
+                    <th class="px-6 py-3" scope="col">Frequência</th>
+                    <th class="px-6 py-3" scope="col">Status</th>
+                    <th class="px-6 py-3" scope="col">Criado Em</th>
+                    <th class="px-6 py-3" scope="col">Ação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="bg-card-light dark:bg-card-dark border-b dark:border-border-dark"
+                  >
+                    <td
+                      class="px-6 py-4 font-medium text-text-light dark:text-text-dark whitespace-nowrap"
+                    >
+                      #12345
+                    </td>
+                    <td class="px-6 py-4">Produto Exemplo</td>
+                    <td class="px-6 py-4">75,00</td>
+                    <td class="px-6 py-4">Mensal</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"
+                        >Ativa</span
+                      >
+                    </td>
+                    <td class="px-6 py-4">17/09/2025</td>
+                    <td class="px-6 py-4">
+                      <div class="flex items-center space-x-2">
+                        <a
+                          class="tooltip text-blue-500 hover:text-blue-700"
+                          href="#"
+                        >
+                          <span class="material-icons text-base"
+                            >visibility</span
+                          >
+                        </a>
+                        <a
+                          class="tooltip text-red-500 hover:text-red-700"
+                          href="#"
+                          onclick="return confirm('Tem certeza que deseja cancelar esta assinatura?')"
+                        >
+                          <span class="material-icons text-base">cancel</span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="bg-card-light dark:bg-card-dark">
+                    <td
+                      class="px-6 py-4 font-medium text-text-light dark:text-text-dark whitespace-nowrap"
+                    >
+                      #12346
+                    </td>
+                    <td class="px-6 py-4">Outro Produto</td>
+                    <td class="px-6 py-4">50,00</td>
+                    <td class="px-6 py-4">Anual</td>
+                    <td class="px-6 py-4">
+                      <span
+                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800"
+                        >Cancelada</span
+                      >
+                    </td>
+                    <td class="px-6 py-4">16/09/2025</td>
+                    <td class="px-6 py-4">
+                      <div class="flex items-center space-x-2">
+                        <a
+                          class="tooltip text-blue-500 hover:text-blue-700"
+                          href="#"
+                        >
+                          <span class="material-icons text-base"
+                            >visibility</span
+                          >
+                        </a>
+                        <a
+                          class="tooltip text-red-500 hover:text-red-700"
+                          href="#"
+                          onclick="return confirm('Tem certeza que deseja cancelar esta assinatura?')"
+                        >
+                          <span class="material-icons text-base">cancel</span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="p-4 flex items-center justify-between">
+              <span
+                class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >Total: 2</span
+              >
+              <div class="flex items-center space-x-2">
+                <span
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                  >Registros por página:</span
+                >
+                <select
+                  class="pl-2 pr-6 py-1 appearance-none bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark rounded-lg text-sm focus:ring-primary focus:border-primary"
+                >
+                  <option>10</option>
+                  <option>25</option>
+                  <option>50</option>
+                  <option>100</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
