@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Flute Dashboard - Lista de Ofertas</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assests/css/index.css" />
+    <script src="assets/js/app.js"></script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark"
+  >
+    <div class="flex h-screen">
+      <aside
+        class="w-64 bg-card-light dark:bg-card-dark border-r border-border-light dark:border-border-dark flex flex-col"
+      >
+        <div class="p-6 flex items-center space-x-3">
+          <div
+            class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-xl">F</span>
+          </div>
+          <h1 class="text-2xl font-bold text-text-light dark:text-text-dark">
+            Flute
+          </h1>
+        </div>
+        <nav class="flex-1 px-4 py-2 space-y-1">
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">dashboard</span> Dashboard
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">shopping_cart</span> Pedidos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">subscriptions</span> Assinaturas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">inventory_2</span> Produtos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">category</span> Categorias
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+            href="#"
+          >
+            <span class="material-icons mr-3">local_offer</span> Ofertas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">sell</span> Cupons de desconto
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">people</span> Coprodutores
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">webhook</span> Webhooks
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">receipt_long</span> Nota fiscal
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Configurações
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">admin_panel_settings</span>
+            Administração
+          </a>
+        </nav>
+        <div
+          class="mt-auto p-4 border-t border-border-light dark:border-border-dark space-y-1"
+        >
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Ajustes
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">logout</span> Logout
+          </a>
+        </div>
+      </aside>
+      <main class="flex-1 overflow-y-auto">
+        <header
+          class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10 p-6 flex items-center justify-between border-b border-border-light dark:border-border-dark"
+        >
+          <div>
+            <h2 class="text-2xl font-bold text-text-light dark:text-text-dark">
+              Lista de Ofertas
+            </h2>
+            <nav
+              aria-label="Breadcrumb"
+              class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+            >
+              <ol class="list-none p-0 inline-flex space-x-2">
+                <li class="flex items-center">
+                  <a class="hover:text-primary" href="#">Home</a>
+                </li>
+                <li class="flex items-center">
+                  <span class="material-icons text-sm">chevron_right</span>
+                  <span class="text-text-light dark:text-text-dark"
+                    >Lista de Ofertas</span
+                  >
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button
+              class="relative p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
+              <span
+                class="material-icons text-text-secondary-light dark:text-text-secondary-dark"
+                >notifications</span
+              >
+              <span
+                class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white"
+                >3</span
+              >
+            </button>
+            <div class="flex items-center space-x-2">
+              <img
+                alt="User avatar"
+                class="w-10 h-10 rounded-full"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCGZuVMMmdnkBe7THZokMamQ2BnhNkApV8vqIiNcPhFBHVAJpAhcQwLTkSwmnktRbg9XPuDplxcDixkZXKnC1jZA5cERsOtzqmm_iFPNjAZNZeG4iM13MdszNuOeKG4b7yp5kk5qiH7-LQ_6s8bVXUX__Maol_jsTIWRu56xKVyoW665TIaHlq0L9wAE0-88ZYt5ac-6Jo4B782Qj4xi3AdqeVKUzG70fBwmbb58tm-RPxx8j9OWm5PTp8gcQTmtHjFh5QxxjzuKE"
+              />
+              <div>
+                <p
+                  class="font-semibold text-sm text-text-light dark:text-text-dark"
+                >
+                  Anônimo
+                </p>
+                <p
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Admin
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="p-6 space-y-6">
+          <div
+            class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm border border-border-light dark:border-border-dark"
+          >
+            <div
+              class="flex flex-col sm:flex-row items-center justify-between gap-4"
+            >
+              <div class="relative flex-1 w-full">
+                <input
+                  class="w-full pl-10 pr-4 py-2 bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary"
+                  placeholder="Informe os termos de busca..."
+                  type="text"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                >
+                  <span
+                    class="material-icons text-text-secondary-light dark:text-text-secondary-dark"
+                    >search</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-4 w-full sm:w-auto">
+                <button
+                  class="w-full sm:w-auto px-4 py-2 rounded-lg bg-primary text-white flex items-center justify-center space-x-2 hover:bg-blue-600 transition-colors"
+                >
+                  <span class="material-icons">search</span>
+                  <span>Buscar</span>
+                </button>
+                <button
+                  class="w-full sm:w-auto px-4 py-2 rounded-lg bg-green-500 text-white flex items-center justify-center space-x-2 hover:bg-green-600 transition-colors"
+                >
+                  <span class="material-icons">add</span>
+                  <span>Nova Oferta</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark overflow-x-auto"
+          >
+            <table
+              class="w-full text-sm text-left text-text-light dark:text-text-dark"
+            >
+              <thead
+                class="text-xs uppercase bg-gray-50 dark:bg-gray-700 text-text-secondary-light dark:text-text-secondary-dark"
+              >
+                <tr>
+                  <th class="px-6 py-3" scope="col">Nome da oferta</th>
+                  <th class="px-6 py-3" scope="col">Data de Lançamento</th>
+                  <th class="px-6 py-3" scope="col">Data de Expiração</th>
+                  <th class="px-6 py-3" scope="col">Data de Criação</th>
+                  <th class="px-6 py-3" scope="col">Ativo</th>
+                  <th class="px-6 py-3" scope="col">Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="bg-card-light dark:bg-card-dark border-b dark:border-border-dark hover:bg-gray-50 dark:hover:bg-gray-600"
+                >
+                  <td class="px-6 py-4 font-medium whitespace-nowrap">
+                    Oferta Especial de Lançamento
+                  </td>
+                  <td class="px-6 py-4">01/01/2024</td>
+                  <td class="px-6 py-4">31/01/2024</td>
+                  <td class="px-6 py-4">25/12/2023</td>
+                  <td class="px-6 py-4">
+                    <span
+                      class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"
+                    >
+                      Sim
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 flex items-center space-x-2">
+                    <button
+                      class="p-1 text-primary hover:bg-primary/10 rounded-full"
+                      title="Editar oferta"
+                    >
+                      <span class="material-icons">edit</span>
+                    </button>
+                    <button
+                      class="p-1 text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full"
+                      title="Ir para o produto associado"
+                    >
+                      <span class="material-icons">shopping_cart</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr
+                  class="bg-card-light dark:bg-card-dark border-b dark:border-border-dark hover:bg-gray-50 dark:hover:bg-gray-600"
+                >
+                  <td class="px-6 py-4 font-medium whitespace-nowrap">
+                    Promoção de Verão
+                  </td>
+                  <td class="px-6 py-4">15/02/2024</td>
+                  <td class="px-6 py-4">15/03/2024</td>
+                  <td class="px-6 py-4">01/02/2024</td>
+                  <td class="px-6 py-4">
+                    <span
+                      class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300"
+                    >
+                      Não
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 flex items-center space-x-2">
+                    <button
+                      class="p-1 text-primary hover:bg-primary/10 rounded-full"
+                      title="Editar oferta"
+                    >
+                      <span class="material-icons">edit</span>
+                    </button>
+                    <button
+                      class="p-1 text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full"
+                      title="Ir para o produto associado"
+                    >
+                      <span class="material-icons">shopping_cart</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="p-4 flex flex-col sm:flex-row items-center justify-between gap-4"
+            >
+              <span
+                class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                >Total: 2</span
+              >
+              <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
+                  <span
+                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                    >Itens por página:</span
+                  >
+                  <select
+                    class="pr-8 py-1 bg-background-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-md text-sm focus:ring-primary focus:border-primary appearance-none text-center"
+                  >
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                  </select>
+                </div>
+                <span
+                  class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                  >1-2 de 2</span
+                >
+                <div class="flex items-center">
+                  <button
+                    class="p-1 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50"
+                    disabled=""
+                  >
+                    <span class="material-icons">chevron_left</span>
+                  </button>
+                  <button
+                    class="p-1 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50"
+                  >
+                    <span class="material-icons">chevron_right</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

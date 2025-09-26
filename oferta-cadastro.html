@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Flute Dashboard - Cadastro de Oferta</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+    <link rel="stylesheet" href="assests/css/index.css" />
+    <script src="assets/js/app.js"></script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark"
+  >
+    <div class="flex h-screen">
+      <aside
+        class="w-64 bg-card-light dark:bg-card-dark border-r border-border-light dark:border-border-dark flex flex-col"
+      >
+        <div class="p-6 flex items-center space-x-3">
+          <div
+            class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-xl">F</span>
+          </div>
+          <h1 class="text-2xl font-bold text-text-light dark:text-text-dark">
+            Flute
+          </h1>
+        </div>
+        <nav class="flex-1 px-4 py-2 space-y-1">
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">dashboard</span> Dashboard
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">shopping_cart</span> Pedidos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">subscriptions</span> Assinaturas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">inventory_2</span> Produtos
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">category</span> Categorias
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+            href="#"
+          >
+            <span class="material-icons mr-3">local_offer</span> Ofertas
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">sell</span> Cupons de desconto
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">people</span> Coprodutores
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">webhook</span> Webhooks
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">receipt_long</span> Nota fiscal
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Configurações
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">admin_panel_settings</span>
+            Administração
+          </a>
+        </nav>
+        <div
+          class="mt-auto p-4 border-t border-border-light dark:border-border-dark space-y-1"
+        >
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">settings</span> Ajustes
+          </a>
+          <a
+            class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons mr-3">logout</span> Logout
+          </a>
+        </div>
+      </aside>
+      <main class="flex-1 overflow-y-auto">
+        <header
+          class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10 p-6 flex items-center justify-between border-b border-border-light dark:border-border-dark"
+        >
+          <div>
+            <h2 class="text-2xl font-bold text-text-light dark:text-text-dark">
+              Cadastro de Oferta
+            </h2>
+            <nav
+              aria-label="Breadcrumb"
+              class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+            >
+              <ol class="list-none p-0 inline-flex space-x-2">
+                <li class="flex items-center">
+                  <a class="hover:text-primary" href="#">Home</a>
+                </li>
+                <li class="flex items-center">
+                  <span class="material-icons text-sm">chevron_right</span>
+                  <a class="hover:text-primary" href="#">Lista de Ofertas</a>
+                </li>
+                <li class="flex items-center">
+                  <span class="material-icons text-sm">chevron_right</span>
+                  <span class="text-text-light dark:text-text-dark"
+                    >Cadastro/Edição de Oferta</span
+                  >
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button
+              class="relative p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            >
+              <span
+                class="material-icons text-text-secondary-light dark:text-text-secondary-dark"
+                >notifications</span
+              >
+              <span
+                class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white"
+                >3</span
+              >
+            </button>
+            <div class="flex items-center space-x-2">
+              <img
+                alt="User avatar"
+                class="w-10 h-10 rounded-full"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCGZuVMMmdnkBe7THZokMamQ2BnhNkApV8vqIiNcPhFBHVAJpAhcQwLTkSwmnktRbg9XPuDplxcDixkZXKnC1jZA5cERsOtzqmm_iFPNjAZNZeG4iM13MdszNuOeKG4b7yp5kk5qiH7-LQ_6s8bVXUX__Maol_jsTIWRu56xKVyoW665TIaHlq0L9wAE0-88ZYt5ac-6Jo4B782Qj4xi3AdqeVKUzG70fBwmbb58tm-RPxx8j9OWm5PTp8gcQTmtHjFh5QxxjzuKE"
+              />
+              <div>
+                <p
+                  class="font-semibold text-sm text-text-light dark:text-text-dark"
+                >
+                  Anônimo
+                </p>
+                <p
+                  class="text-xs text-text-secondary-light dark:text-text-secondary-dark"
+                >
+                  Admin
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="p-6 space-y-6">
+          <div
+            class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm border border-border-light dark:border-border-dark"
+          >
+            <form id="offerForm" novalidate="">
+              <div class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
+                  <div class="md:col-span-6">
+                    <label
+                      class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                      for="nome"
+                      >Nome <span class="text-red-500">*</span></label
+                    >
+                    <input
+                      class="mt-1 block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                      id="nome"
+                      required=""
+                      type="text"
+                    />
+                    <p class="text-xs text-red-500 mt-1 hidden" id="nome-error">
+                      Campo obrigatório.
+                    </p>
+                  </div>
+                  <div class="md:col-span-3">
+                    <label
+                      class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                      for="slug"
+                      >Slug <span class="text-red-500">*</span></label
+                    >
+                    <input
+                      class="mt-1 block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                      id="slug"
+                      required=""
+                      type="text"
+                    />
+                    <p class="text-xs text-red-500 mt-1 hidden" id="slug-error">
+                      Campo obrigatório.
+                    </p>
+                  </div>
+                  <div
+                    class="md:col-span-3 flex items-center justify-start md:justify-end h-full"
+                  >
+                    <label
+                      class="relative inline-flex items-center cursor-pointer"
+                      for="active"
+                    >
+                      <input
+                        checked=""
+                        class="sr-only peer"
+                        id="active"
+                        type="checkbox"
+                      />
+                      <div
+                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                      ></div>
+                      <span
+                        class="ml-3 text-sm font-medium text-text-light dark:text-text-dark"
+                        >Ativo</span
+                      >
+                    </label>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                      for="data-lancamento"
+                      >Data de Lançamento</label
+                    >
+                    <div class="relative mt-1">
+                      <input
+                        class="block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm pr-10"
+                        id="data-lancamento"
+                        placeholder="Selecione uma data"
+                        type="text"
+                      />
+                      <div
+                        class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+                      >
+                        <span
+                          class="material-icons text-text-secondary-light dark:text-text-secondary-dark"
+                          >calendar_today</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                      for="data-expiracao"
+                      >Data de Expiração</label
+                    >
+                    <div class="relative mt-1">
+                      <input
+                        class="block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm pr-10"
+                        id="data-expiracao"
+                        placeholder="Selecione uma data"
+                        type="text"
+                      />
+                      <div
+                        class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+                      >
+                        <span
+                          class="material-icons text-text-secondary-light dark:text-text-secondary-dark"
+                          >calendar_today</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                      for="gtm"
+                      >Código do GTM</label
+                    >
+                    <input
+                      class="mt-1 block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                      id="gtm"
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                      for="pixel-meta"
+                      >Código do Pixel Meta</label
+                    >
+                    <input
+                      class="mt-1 block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                      id="pixel-meta"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                    for="ga"
+                    >Código do GA</label
+                  >
+                  <input
+                    class="mt-1 block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                    id="ga"
+                    type="text"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                    for="script-adicional"
+                    >Script adicional</label
+                  >
+                  <textarea
+                    class="mt-1 block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                    id="script-adicional"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
+                  <div>
+                    <label
+                      class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                      for="quantidade"
+                      >Limitar quantidade</label
+                    >
+                    <input
+                      class="mt-1 block w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
+                      id="quantidade"
+                      min="0"
+                      oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                      placeholder="Opcional"
+                      type="number"
+                    />
+                  </div>
+                  <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-2">
+                      <div>
+                        <label
+                          class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                          for="cor-background"
+                          >Cor Background</label
+                        >
+                        <div class="flex items-center mt-1">
+                          <input
+                            class="block rounded-md cursor-pointer"
+                            id="cor-background"
+                            type="color"
+                            value="#F3F4F6"
+                          />
+                          <span
+                            class="font-mono text-sm text-text-secondary-light dark:text-text-secondary-dark ml-2"
+                            id="cor-background-hex"
+                            >#F3F4F6</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div>
+                        <label
+                          class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark"
+                          for="cor-fonte"
+                          >Cor Fonte</label
+                        >
+                        <div class="flex items-center mt-1">
+                          <input
+                            class="block rounded-md cursor-pointer"
+                            id="cor-fonte"
+                            type="color"
+                            value="#1F2937"
+                          />
+                          <span
+                            class="font-mono text-sm text-text-secondary-light dark:text-text-secondary-dark ml-2"
+                            id="cor-fonte-hex"
+                            >#1F2937</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pt-6 border-t border-border-light dark:border-border-dark flex justify-end gap-3 mt-6"
+              >
+                <button
+                  class="px-4 py-2 border border-text-secondary-light dark:border-text-secondary-dark text-text-secondary-light dark:text-text-secondary-dark rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                  id="cancelButton"
+                  type="button"
+                >
+                  Cancelar
+                </button>
+                <button
+                  class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600"
+                  id="saveButton"
+                  type="submit"
+                >
+                  Salvar
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            aria-live="assertive"
+            class="pointer-events-none fixed inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6"
+          >
+            <div
+              class="flex w-full flex-col items-center space-y-4 sm:items-end"
+            >
+              <div
+                class="hidden max-w-sm w-full bg-green-500 text-white rounded-lg shadow-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden"
+                id="success-alert"
+              >
+                <div class="p-4">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <span class="material-icons">check_circle</span>
+                    </div>
+                    <div class="ml-3 w-0 flex-1 pt-0.5">
+                      <p class="text-sm font-medium">
+                        Oferta salva com sucesso!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden fixed z-50 inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+            id="cancel-modal-backdrop"
+          ></div>
+          <div
+            class="hidden fixed z-50 inset-0 overflow-y-auto"
+            id="cancel-modal"
+          >
+            <div
+              class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+            >
+              <div
+                class="inline-block align-bottom bg-card-light dark:bg-card-dark rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+              >
+                <div
+                  class="bg-card-light dark:bg-card-dark px-4 pt-5 pb-4 sm:p-6 sm:pb-4"
+                >
+                  <div class="sm:flex sm:items-start">
+                    <div
+                      class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10"
+                    >
+                      <span class="material-icons text-red-600">warning</span>
+                    </div>
+                    <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                      <h3
+                        class="text-lg leading-6 font-medium text-text-light dark:text-text-dark"
+                        id="modal-title"
+                      >
+                        Cancelar alterações
+                      </h3>
+                      <div class="mt-2">
+                        <p
+                          class="text-sm text-text-secondary-light dark:text-text-secondary-dark"
+                        >
+                          Tem certeza de que deseja cancelar? Todas as
+                          alterações não salvas serão perdidas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gray-50 dark:bg-gray-800 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"
+                >
+                  <button
+                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                    id="confirm-cancel"
+                    type="button"
+                  >
+                    Confirmar
+                  </button>
+                  <button
+                    class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 dark:border-gray-600 shadow-sm px-4 py-2 bg-white dark:bg-gray-700 text-base font-medium text-text-light dark:text-text-dark hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                    id="close-modal"
+                    type="button"
+                  >
+                    Voltar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      flatpickr("#data-lancamento", {
+        enableTime: true,
+        dateFormat: "d/m/Y H:i",
+        locale: "pt",
+      });
+      flatpickr("#data-expiracao", {
+        enableTime: true,
+        dateFormat: "d/m/Y H:i",
+        locale: "pt",
+      });
+      const form = document.getElementById("offerForm");
+      const saveButton = document.getElementById("saveButton");
+      const cancelButton = document.getElementById("cancelButton");
+      const cancelModal = document.getElementById("cancel-modal");
+      const cancelModalBackdrop = document.getElementById(
+        "cancel-modal-backdrop"
+      );
+      const confirmCancelButton = document.getElementById("confirm-cancel");
+      const closeModalButton = document.getElementById("close-modal");
+      const successAlert = document.getElementById("success-alert");
+      const nomeInput = document.getElementById("nome");
+      const slugInput = document.getElementById("slug");
+      const nomeError = document.getElementById("nome-error");
+      const slugError = document.getElementById("slug-error");
+      const corBackgroundInput = document.getElementById("cor-background");
+      const corBackgroundHex = document.getElementById("cor-background-hex");
+      const corFonteInput = document.getElementById("cor-fonte");
+      const corFonteHex = document.getElementById("cor-fonte-hex");
+      corBackgroundInput.addEventListener("input", (event) => {
+        corBackgroundHex.textContent = event.target.value.toUpperCase();
+      });
+      corFonteInput.addEventListener("input", (event) => {
+        corFonteHex.textContent = event.target.value.toUpperCase();
+      });
+      function validateField(input, errorElement, message) {
+        if (!input.value.trim()) {
+          input.classList.add("border-red-500");
+          errorElement.textContent = message;
+          errorElement.classList.remove("hidden");
+          return false;
+        } else {
+          input.classList.remove("border-red-500");
+          errorElement.classList.add("hidden");
+          return true;
+        }
+      }
+      function validateForm() {
+        let isValid = true;
+        isValid =
+          validateField(nomeInput, nomeError, "Campo obrigatório.") && isValid;
+        isValid =
+          validateField(slugInput, slugError, "Campo obrigatório.") && isValid;
+        return isValid;
+      }
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (validateForm()) {
+          successAlert.classList.remove("hidden");
+          setTimeout(() => {
+            successAlert.classList.add("hidden");
+          }, 3000);
+          // Aqui você adicionaria a lógica para enviar os dados do formulário
+          console.log("Formulário válido. Enviando...");
+        }
+      });
+      cancelButton.addEventListener("click", () => {
+        cancelModal.classList.remove("hidden");
+        cancelModalBackdrop.classList.remove("hidden");
+      });
+      closeModalButton.addEventListener("click", () => {
+        cancelModal.classList.add("hidden");
+        cancelModalBackdrop.classList.add("hidden");
+      });
+      confirmCancelButton.addEventListener("click", () => {
+        // Redireciona para a lista de ofertas ou limpa o formulário
+        window.location.href = "#"; // Altere para a página de lista de ofertas
+      });
+      cancelModalBackdrop.addEventListener("click", () => {
+        cancelModal.classList.add("hidden");
+        cancelModalBackdrop.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
